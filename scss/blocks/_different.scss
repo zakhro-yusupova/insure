@@ -1,0 +1,126 @@
+.different{
+  background-image: url("../../images/hero-left-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 900px) calc(50% - 300px);
+  padding: 305px 0 160px;
+}
+
+.different__line{
+  background-color: #C396C6;
+}
+
+.different__title{
+  font-family:" DM Serif Display";
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: $dim-gray;
+  margin:63px 0 96px;
+}
+
+.different__list{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.different__item{
+  position: relative;
+  width: 350px;
+  padding-top: 90px;
+
+  &:nth-child(1){
+    position: relative;
+
+    &::before{
+      content: "";
+      width: 86px;
+      height: 86px;
+      background-image: url("../../images/process.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &:nth-child(2){
+    position: relative;
+    margin: 0 30px;
+
+    &::before{
+      content: "";
+      width: 86px;
+      height: 86px;
+      background-image: url("../../images/prices.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &:nth-child(3){
+    position: relative;
+
+    &::before{
+      content: "";
+      width: 86px;
+      height: 86px;
+      background-image: url("../../images/people-first.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+
+.different__subtitle{
+  font-family:"DM Serif Display";
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.388889px;
+  color: $dim-gray;
+  margin-bottom:16px;
+}
+
+.different__text{
+  line-height: 26px;
+  color: $text-color;
+}
+
+
+
+@media only  screen and (max-width: 426px){
+
+  .different{
+    padding:140px 0 ;
+  }
+
+  .different__line{
+    display: block;
+  margin: 0 auto;
+  }
+  .different__title{
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .different__list{
+    flex-direction: column;
+  }
+
+  .different__item{
+    text-align: center;
+
+    &:nth-child(2){
+      margin: 56px 0;
+    }
+
+    &::before{
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}

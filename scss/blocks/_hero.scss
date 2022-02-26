@@ -1,0 +1,102 @@
+.hero{
+  background-color: $background;
+  background-image: url("../../images/hero-left-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 680px) calc(50% - 100px);
+  padding: 105px 0 130px;
+}
+
+.hero__inner{
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hero__content{
+  width: 540px;
+  color: $white-color;
+  margin-right: 30px;
+}
+
+.line{
+  display: block;
+  width: 150px;
+  height: 1px;
+  margin-bottom: 63px;
+  background-color: $white-color;
+}
+
+.hero__title{
+  font-family: "DM Serif Display";
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.hero__text{
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.hero__link{
+  display: inline-block;
+  color: $white-color;
+  margin-left: 0;
+  border: 1.5px solid $white-color;
+}
+
+.hero__img{
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+
+.hero__mobile-img{
+  display: none;
+}
+
+@media only  screen and (max-width: 426px){
+
+.hero{
+  padding-top: 0;
+  padding-bottom:93px ;
+  background-position: calc(50% - 190px) calc(50% - 40px);
+  background-size: 100%;
+}
+
+.hero-container{
+  padding: 0;
+}
+
+.hero__inner{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.hero__img{
+  display: none;
+}
+
+.hero__mobile-img{
+  width: 100%;
+  display: block;
+}
+
+.hero__line{
+  display: none;
+}
+
+.hero__content{
+  width: 327px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 93px;
+
+}
+
+.hero__title{
+  font-size: 48px;
+line-height: 48px;
+}
+}
