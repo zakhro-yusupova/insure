@@ -27,6 +27,10 @@
 
 .site-header__item{
   margin-right: 26px;
+
+  &:last-child{
+    margin-right: 0;
+  }
 }
 
 .site-header__item-link{

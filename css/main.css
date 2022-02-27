@@ -426,6 +426,10 @@ img {
   margin-right: 26px;
 }
 
+.site-header__item:last-child {
+  margin-right: 0;
+}
+
 .site-header__item-link {
   font-weight: bold;
   font-size: 13px;
